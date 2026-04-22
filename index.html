@@ -13,12 +13,12 @@
             color: #222;
         }
 
-        /* 🔵 Main header */
+        /* 🔵 Header */
         header {
             background: #1f3fbf;
             color: white;
             text-align: center;
-            padding: 60px 20px 40px 20px;
+            padding: 60px 20px 35px 20px;
         }
 
         header h1 {
@@ -29,36 +29,27 @@
         .school {
             margin-top: 6px;
             font-size: 16px;
-            opacity: 0.8;
+            opacity: 0.85;
         }
 
-        /* 🔵 Motto becomes structured header element */
-        .motto {
-            margin-top: 20px;
-            display: inline-block;
-            padding: 10px 22px;
-            background: rgba(255, 255, 255, 0.18);
-            border-radius: 8px;
-            font-style: italic;
-            font-size: 20px;
-            letter-spacing: 0.5px;
-        }
-
-        /* 🔵 REAL full-width banner UNDER header */
-        .banner {
-            background: #162f91;
-            color: white;
-            text-align: center;
-            padding: 10px 15px;
-            font-size: 14px;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-        }
-
+        /* 🔵 Main content */
         main {
             max-width: 850px;
             margin: auto;
             padding: 40px 20px;
+        }
+
+        /* 🔵 Proferre badge INSIDE white area */
+        .motto {
+            display: inline-block;
+            background: #1f3fbf;
+            color: white;
+            padding: 10px 22px;
+            border-radius: 8px;
+            font-style: italic;
+            font-size: 20px;
+            letter-spacing: 0.5px;
+            margin-bottom: 25px;
         }
 
         section {
@@ -85,17 +76,12 @@
 <header>
     <h1>AG Debate Club</h1>
     <div class="school">Amerikanska Gymnasiet Göteborg</div>
-
-    <!-- 🔵 Now part of header hierarchy -->
-    <div class="motto">Proferre!</div>
 </header>
 
-<!-- 🔵 Clean structural banner -->
-<div class="banner">
-    Our vision: Students teaching students through reasoned debate and perspective
-</div>
-
 <main>
+
+    <!-- 🔵 NOW correctly placed in white section -->
+    <div class="motto">Proferre!</div>
 
     <section>
         <h2>About Us</h2>
