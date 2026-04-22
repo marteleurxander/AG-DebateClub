@@ -8,57 +8,112 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
             margin: 0;
-            padding: 0;
+            background-color: #f4f4f4;
+            color: #222;
         }
 
+        /* 🔵 Header */
         header {
-            background-color: darkblue;
+            background: linear-gradient(135deg, #0b1e6b, #1e3cff);
             color: white;
-            padding: 20px;
             text-align: center;
+            padding: 50px 20px;
         }
 
+        header h1 {
+            margin: 0;
+            font-size: 42px;
+            letter-spacing: 1px;
+        }
+
+        header h2 {
+            margin: 10px 0 0 0;
+            font-weight: normal;
+            font-size: 18px;
+            opacity: 0.9;
+        }
+
+        .motto {
+            margin-top: 20px;
+            font-style: italic;
+            font-size: 20px;
+            opacity: 0.95;
+        }
+
+        /* 📄 Main content */
         main {
-            padding: 40px;
-        }
-
-        h2 {
-            color: #333;
+            max-width: 900px;
+            margin: auto;
+            padding: 40px 20px;
         }
 
         section {
-            margin-bottom: 30px;
+            background: white;
+            padding: 20px 25px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        h2 {
+            color: #1e3cff;
+            margin-top: 0;
+        }
+
+        /* 📩 Contact highlight */
+        .contact {
+            background: #eaf0ff;
         }
     </style>
 </head>
 
 <body>
 
-    <header>
-        <h1>🏛️ AG Debate Club</h1>
-        <p>Amerikanska Gymnasiet Göteborg</p>
-    </header>
+<header>
+    <h1>AG Debate Club</h1>
+    <h2>Amerikanska Gymnasiet Göteborg</h2>
+    <div class="motto">“Proferre!”</div>
+</header>
 
-    <main>
+<main>
 
-        <section>
-            <h2>About Us</h2>
-            <p>We are a group of students passionate about debate, public speaking, and critical thinking.</p>
-        </section>
+    <section>
+        <h2>About Us</h2>
+        <p>
+            Our vision is to let students teach students through reasoned debate and diverse perspectives. 
+            We aim to build confidence in public speaking, structured argumentation, and critical thinking.
+        </p>
 
-        <section>
-            <h2>Meeting Times</h2>
-            <p>Every Wednesday at 15:30 in Room 204.</p>
-        </section>
+        <p>
+            We meet weekly for a mix of traditional debates, skill-building exercises, and collaborative discussions 
+            that help members grow both socially and intellectually.
+        </p>
 
-        <section>
-            <h2>Join Us</h2>
-            <p>Email: debateclub@school.com</p>
-        </section>
+        <p>
+            Our goals include preparing members for events such as the MIC school debates, speech competitions, 
+            and helping them develop skills that extend beyond school into university and professional life.
+        </p>
+    </section>
 
-    </main>
+    <section>
+        <h2>Meetings</h2>
+        <p>
+            We meet in the <strong>Debate Hall (Floor 3)</strong> every Thursday at <strong>15:30</strong>, unless otherwise announced.
+        </p>
+    </section>
+
+    <section class="contact">
+        <h2>Contact</h2>
+        <p>
+            Interested in joining?<br><br>
+
+            Email: <strong>xander.marteleur.gbg25@amerikanskagymnasiet.se</strong> (Club Leader)<br>
+            Or contact Stephen directly in school.
+        </p>
+    </section>
+
+</main>
 
 </body>
 </html>
