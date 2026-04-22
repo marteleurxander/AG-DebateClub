@@ -1,137 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AG Debate Club</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AG Debate Club</title>
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background-color: #f6f7fb;
-            color: #222;
-        }
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        background-color: #f6f7fb;
+        color: #222;
+    }
 
-        /* 🔵 Header with FLAG */
-        header {
-            position: relative;
-            color: white;
-            text-align: center;
-            padding: 60px 20px 35px 20px;
-            overflow: hidden;
-        }
+    /* 🔵 Header with FLAG */
+    header {
+        position: relative;
+        color: white;
+        text-align: center;
+        padding: 60px 20px 35px 20px;
+        overflow: hidden;
+    }
 
-        /* 🇺🇸 Flag layer */
-        header::before {
-            content: "";
-            position: absolute;
-            inset: 0;
-            background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Flag_of_the_United_States_%28DDD-F-416E_specifications%29.svg/1920px-Flag_of_the_United_States_%28DDD-F-416E_specifications%29.svg.png");
-            background-size: cover;
-            background-position: center;
-            opacity: 0.5; /* FIXED: stronger visibility */
-            z-index: 0;
-        }
+    header::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Flag_of_the_United_States_%28DDD-F-416E_specifications%29.svg/1920px-Flag_of_the_United_States_%28DDD-F-416E_specifications%29.svg.png");
+        background-size: cover;
+        background-position: center;
+        opacity: 0.5;
+        z-index: 0;
+    }
 
-        /* Blue overlay for readability */
-        header::after {
-            content: "";
-            position: absolute;
-            inset: 0;
-            background: #1f3fbf;
-            opacity: 0.85;
-            z-index: 0;
-        }
+    header::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: #1f3fbf;
+        opacity: 0.85;
+        z-index: 0;
+    }
 
-        header * {
-            position: relative;
-            z-index: 1;
-        }
+    header * {
+        position: relative;
+        z-index: 1;
+    }
 
-        header h1 {
-            margin: 0;
-            font-size: 44px;
-        }
+    header h1 {
+        margin: 0;
+        font-size: 44px;
+    }
 
-        .school {
-            margin-top: 6px;
-            font-size: 16px;
-            opacity: 0.85;
-        }
+    .school {
+        margin-top: 6px;
+        font-size: 16px;
+        opacity: 0.85;
+    }
 
-        /* 🔵 Main content */
-        main {
-            max-width: 850px;
-            margin: auto;
-            padding: 40px 20px;
-        }
+    /* 🔵 Main content */
+    main {
+        max-width: 850px;
+        margin: auto;
+        padding: 40px 20px;
+    }
 
-        /* 🔵 ORIGINAL BANNER (unchanged logic) */
-        .motto {
-            width: 100%;
-            display: block;
-            background: rgba(31, 63, 191, 0.5);
-            color: white;
-            padding: 14px 20px;
-            font-style: italic;
-            font-size: 20px;
-            letter-spacing: 0.5px;
+    /* 🔵 PROFERRE BANNER */
+    .motto {
+        width: 100%;
+        display: block;
+        background: rgba(31, 63, 191, 0.5);
+        color: white;
+        padding: 14px 20px;
+        font-style: italic;
+        font-size: 20px;
+        letter-spacing: 0.5px;
+        position: relative;
+        margin: 0 0 25px 0;
+    }
 
-            position: relative;
-            margin: 0 0 25px 0;
-        }
+    .motto::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 8px;
+        background: #0f2370;
+    }
 
-        .motto::before {
-            content: "";
-            position: absolute;
-            left: 0;
-            top: 0;
-            bottom: 0;
-            width: 8px;
-            background: #0f2370;
-        }
+    .motto::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -8px;
+        width: 100%;
+        height: 3px;
+        background: #1f3fbf;
+    }
 
-        .motto::after {
-            content: "";
-            position: absolute;
-            left: 0;
-            bottom: -8px;
-            width: 100%;
-            height: 3px;
-            background: #1f3fbf;
-        }
+    section {
+        margin-bottom: 30px;
+    }
 
-        section {
-            margin-bottom: 30px;
-        }
+    h2 {
+        color: #1f3fbf;
+        margin-bottom: 10px;
+    }
 
-        h2 {
-            color: #1f3fbf;
-            margin-bottom: 10px;
-        }
+    p {
+        line-height: 1.6;
+    }
 
-        p {
-            line-height: 1.6;
-        }
+    .email {
+        font-weight: bold;
+    }
 
-        .email {
-            font-weight: bold;
-        }
+    /* 🔁 FOOTER QUOTE */
+    footer {
+        text-align: center;
+        padding: 35px 20px;
+        font-style: italic;
+        color: #444;
+    }
 
-        /* 🔁 FOOTER QUOTE */
-        footer {
-            text-align: center;
-            padding: 30px 20px;
-            font-style: italic;
-            color: #444;
-        }
-
-        .quote {
-            font-size: 16px;
-            opacity: 0.85;
-        }
-    </style>
+    .quote {
+        font-size: 16px;
+        opacity: 0.85;
+        max-width: 700px;
+        margin: auto;
+    }
+</style>
 </head>
 
 <body>
@@ -148,15 +147,15 @@
     <section>
         <h2>About Us</h2>
         <p>
-            We aim to build confidence in public speaking, structured argumentation, and critical thinking through regular debate and discussion.
+            We aim to build the confidence, public speaking ability, and critical thinking of our members through regular debate, discussion, and the broadening of perspective.
         </p>
 
         <p>
-            Our sessions combine traditional debates, exercises, and collaborative learning designed to help members grow academically and socially.
+            We prepare our members for the MIC school Debates, speech competitions, and how to convince and be convinced by others.
         </p>
 
         <p>
-            We prepare students for MIC school debates, speech competitions, and future university or professional environments.
+            Our sessions include traditional debates, exercises, lessons, and opportunities to get to know one another.
         </p>
     </section>
 
@@ -183,10 +182,10 @@
 
 <script>
 const quotes = [
-    "The strength of an argument lies in its clarity.",
-    "To debate is to learn twice.",
-    "Reason is the compass of discussion.",
-    "Every voice sharpens the truth."
+    "“The aim of argument, or of discussion, should not be victory, but progress.” — Joseph Joubert",
+    "“Speech is power: speech is to persuade, to convert, to compel.” — Ralph Waldo Emerson",
+    "“Sapere Aude” — Dare to know / Dare to be wise",
+    "“Don’t raise your voice, improve your argument.” — Desmond Tutu"
 ];
 
 let i = 0;
@@ -197,8 +196,8 @@ function rotate() {
     i = (i + 1) % quotes.length;
 }
 
-rotate(); // ensures it shows immediately
-setInterval(rotate, 4000);
+rotate();
+setInterval(rotate, 5000);
 </script>
 
 </body>
