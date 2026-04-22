@@ -13,11 +13,12 @@
             color: #222;
         }
 
+        /* 🔵 Header */
         header {
             background: #1f3fbf;
             color: white;
             text-align: center;
-            padding: 60px 20px;
+            padding: 55px 20px;
         }
 
         header h1 {
@@ -26,20 +27,20 @@
         }
 
         .school {
-            margin-top: 5px;
+            margin-top: 6px;
             font-size: 16px;
             opacity: 0.75;
         }
 
-        /* 🔵 Blue motto banner */
-        .motto {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 8px 18px;
-            background: rgba(255, 255, 255, 0.15);
-            border-radius: 6px;
+        /* 🔵 REAL banner (full width strip inside page) */
+        .banner {
+            background: #1f3fbf;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
             font-style: italic;
             font-size: 20px;
+            letter-spacing: 0.5px;
         }
 
         main {
@@ -50,7 +51,6 @@
 
         section {
             margin-bottom: 30px;
-            padding-bottom: 10px;
         }
 
         h2 {
@@ -60,11 +60,6 @@
 
         p {
             line-height: 1.6;
-        }
-
-        /* 📩 Contact styling */
-        .contact {
-            margin-top: 10px;
         }
 
         .email {
@@ -78,8 +73,12 @@
 <header>
     <h1>AG Debate Club</h1>
     <div class="school">Amerikanska Gymnasiet Göteborg</div>
-    <div class="motto">“Proferre!”</div>
 </header>
+
+<!-- 🔵 Moved motto here as a real banner -->
+<div class="banner">
+    Proferre!
+</div>
 
 <main>
 
@@ -87,16 +86,15 @@
         <h2>About Us</h2>
         <p>
             Our vision is to let students teach students through reasoned debate and diverse perspectives.
-            We focus on building confidence in public speaking, structured argumentation, and critical thinking.
+            We aim to build confidence in public speaking, structured argumentation, and critical thinking.
         </p>
 
         <p>
-            We meet weekly for debates, skill exercises, and open discussions. The goal is simple:
-            to grow together through discussion and curiosity.
+            We meet weekly for debates, skill exercises, and open discussions that encourage curiosity and growth.
         </p>
 
         <p>
-            We also prepare members for MIC school debates, speech events, and future academic or professional environments.
+            Our goal is to prepare members for MIC school debates, speech competitions, and future academic or professional life.
         </p>
     </section>
 
@@ -107,7 +105,7 @@
         </p>
     </section>
 
-    <section class="contact">
+    <section>
         <h2>Contact</h2>
         <p>
             <span class="email">xander.marteleur.gbg25@amerikanskagymnasiet.se</span> (Club Leader)<br>
