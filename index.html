@@ -9,29 +9,35 @@
         body {
             font-family: Arial, sans-serif;
             margin: 0;
-            background-color: #f4f4f4;
+            background-color: #f6f7fb;
             color: #222;
         }
 
-        /* 🔵 Header */
+        /* 🔵 Softer header */
         header {
-            background: linear-gradient(135deg, #0b1e6b, #1e3cff);
+            background: #1f3fbf;
             color: white;
             text-align: center;
-            padding: 50px 20px;
+            padding: 60px 20px;
         }
 
         header h1 {
             margin: 0;
-            font-size: 42px;
-            letter-spacing: 1px;
+            font-size: 44px;
         }
 
         header h2 {
-            margin: 10px 0 0 0;
+            margin: 8px 0 0 0;
             font-weight: normal;
             font-size: 18px;
-            opacity: 0.9;
+            opacity: 0.85;
+        }
+
+        /* ✨ Separate school line more clearly */
+        .school {
+            margin-top: 5px;
+            font-size: 16px;
+            opacity: 0.75;
         }
 
         .motto {
@@ -41,29 +47,28 @@
             opacity: 0.95;
         }
 
-        /* 📄 Main content */
         main {
-            max-width: 900px;
+            max-width: 850px;
             margin: auto;
             padding: 40px 20px;
         }
 
         section {
-            background: white;
-            padding: 20px 25px;
-            margin-bottom: 20px;
-            border-radius: 10px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            margin-bottom: 30px;
+            padding-bottom: 10px;
         }
 
         h2 {
-            color: #1e3cff;
-            margin-top: 0;
+            color: #1f3fbf;
+            margin-bottom: 10px;
         }
 
-        /* 📩 Contact highlight */
+        p {
+            line-height: 1.6;
+        }
+
         .contact {
-            background: #eaf0ff;
+            margin-top: 10px;
         }
     </style>
 </head>
@@ -72,7 +77,7 @@
 
 <header>
     <h1>AG Debate Club</h1>
-    <h2>Amerikanska Gymnasiet Göteborg</h2>
+    <div class="school">Amerikanska Gymnasiet Göteborg</div>
     <div class="motto">“Proferre!”</div>
 </header>
 
@@ -81,35 +86,32 @@
     <section>
         <h2>About Us</h2>
         <p>
-            Our vision is to let students teach students through reasoned debate and diverse perspectives. 
-            We aim to build confidence in public speaking, structured argumentation, and critical thinking.
+            Our vision is to let students teach students through reasoned debate and diverse perspectives.
+            We focus on building confidence in public speaking, structured argumentation, and critical thinking.
         </p>
 
         <p>
-            We meet weekly for a mix of traditional debates, skill-building exercises, and collaborative discussions 
-            that help members grow both socially and intellectually.
+            We meet weekly for debates, skill exercises, and open discussions. The goal is simple:
+            to grow together through discussion and curiosity.
         </p>
 
         <p>
-            Our goals include preparing members for events such as the MIC school debates, speech competitions, 
-            and helping them develop skills that extend beyond school into university and professional life.
+            We also prepare members for MIC school debates, speech events, and future academic or professional environments.
         </p>
     </section>
 
     <section>
         <h2>Meetings</h2>
         <p>
-            We meet in the <strong>Debate Hall (Floor 3)</strong> every Thursday at <strong>15:30</strong>, unless otherwise announced.
+            Debate Hall (Floor 3), every Thursday at 15:30 unless otherwise stated.
         </p>
     </section>
 
     <section class="contact">
         <h2>Contact</h2>
         <p>
-            Interested in joining?<br><br>
-
-            Email: <strong>xander.marteleur.gbg25@amerikanskagymnasiet.se</strong> (Club Leader)<br>
-            Or contact Stephen directly in school.
+            xander.marteleur.gbg25@amerikanskagymnasiet.se (Club Leader)<br>
+            Or contact Stephen in person.
         </p>
     </section>
 
