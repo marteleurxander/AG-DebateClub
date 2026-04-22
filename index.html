@@ -13,12 +13,12 @@
             color: #222;
         }
 
-        /* 🔵 Header */
+        /* 🔵 Main header */
         header {
             background: #1f3fbf;
             color: white;
             text-align: center;
-            padding: 55px 20px;
+            padding: 60px 20px 40px 20px;
         }
 
         header h1 {
@@ -29,18 +29,30 @@
         .school {
             margin-top: 6px;
             font-size: 16px;
-            opacity: 0.75;
+            opacity: 0.8;
         }
 
-        /* 🔵 REAL banner (full width strip inside page) */
-        .banner {
-            background: #1f3fbf;
-            color: white;
-            text-align: center;
-            padding: 14px 20px;
+        /* 🔵 Motto becomes structured header element */
+        .motto {
+            margin-top: 20px;
+            display: inline-block;
+            padding: 10px 22px;
+            background: rgba(255, 255, 255, 0.18);
+            border-radius: 8px;
             font-style: italic;
             font-size: 20px;
             letter-spacing: 0.5px;
+        }
+
+        /* 🔵 REAL full-width banner UNDER header */
+        .banner {
+            background: #162f91;
+            color: white;
+            text-align: center;
+            padding: 10px 15px;
+            font-size: 14px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
         }
 
         main {
@@ -73,11 +85,14 @@
 <header>
     <h1>AG Debate Club</h1>
     <div class="school">Amerikanska Gymnasiet Göteborg</div>
+
+    <!-- 🔵 Now part of header hierarchy -->
+    <div class="motto">Proferre!</div>
 </header>
 
-<!-- 🔵 Moved motto here as a real banner -->
+<!-- 🔵 Clean structural banner -->
 <div class="banner">
-    Proferre!
+    Our vision: Students teaching students through reasoned debate and perspective
 </div>
 
 <main>
@@ -85,16 +100,15 @@
     <section>
         <h2>About Us</h2>
         <p>
-            Our vision is to let students teach students through reasoned debate and diverse perspectives.
-            We aim to build confidence in public speaking, structured argumentation, and critical thinking.
+            We aim to build confidence in public speaking, structured argumentation, and critical thinking through regular debate and discussion.
         </p>
 
         <p>
-            We meet weekly for debates, skill exercises, and open discussions that encourage curiosity and growth.
+            Our sessions combine traditional debates, exercises, and collaborative learning designed to help members grow academically and socially.
         </p>
 
         <p>
-            Our goal is to prepare members for MIC school debates, speech competitions, and future academic or professional life.
+            We prepare students for MIC school debates, speech competitions, and future university or professional environments.
         </p>
     </section>
 
