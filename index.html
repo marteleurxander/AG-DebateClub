@@ -13,7 +13,6 @@
             color: #222;
         }
 
-        /* 🔵 Softer header */
         header {
             background: #1f3fbf;
             color: white;
@@ -26,25 +25,21 @@
             font-size: 44px;
         }
 
-        header h2 {
-            margin: 8px 0 0 0;
-            font-weight: normal;
-            font-size: 18px;
-            opacity: 0.85;
-        }
-
-        /* ✨ Separate school line more clearly */
         .school {
             margin-top: 5px;
             font-size: 16px;
             opacity: 0.75;
         }
 
+        /* 🔵 Blue motto banner */
         .motto {
+            display: inline-block;
             margin-top: 20px;
+            padding: 8px 18px;
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 6px;
             font-style: italic;
             font-size: 20px;
-            opacity: 0.95;
         }
 
         main {
@@ -67,8 +62,13 @@
             line-height: 1.6;
         }
 
+        /* 📩 Contact styling */
         .contact {
             margin-top: 10px;
+        }
+
+        .email {
+            font-weight: bold;
         }
     </style>
 </head>
@@ -110,7 +110,7 @@
     <section class="contact">
         <h2>Contact</h2>
         <p>
-            xander.marteleur.gbg25@amerikanskagymnasiet.se (Club Leader)<br>
+            <span class="email">xander.marteleur.gbg25@amerikanskagymnasiet.se</span> (Club Leader)<br>
             Or contact Stephen in person.
         </p>
     </section>
